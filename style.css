@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background: #13131F;
+    width: 100%;
+    height: 100vh;
+}
+
+/* header */
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.menu a {
+    transition: 0.7s;
+}
+
+.menu a:hover {
+    color: #8257E6;
+}
+
+.cabecalho span {
+    color: #8257E6;
+    font-size: 24px;
+}
+
+.minha-conta p {
+    border: 1px solid #8257E6;
+    border-radius: 20px;
+    padding: 5px 18px;
+}
+
+/* section capa */
+
+.capa {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    width: 100%;
+
+}
+
+.capa {
+    background-image: url("img/capanoticia.png");
+    width: 1400px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: 120px;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: color;
+}
+
+.capa-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: -800px;
+    margin-top: 70px;
+    gap: 15px;
+}
+
+.capa-text h1 {
+    font-size: 26px;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.capa-text p {
+    line-height: 22px;
+    color: #C4C4C4;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.ajuda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.ajuda input {
+    width: 1120px;
+    height: 40px;
+    background: #282830;
+    color: #989898;
+    border: none;
+    outline: none;
+}
+
+.ajuda input::placeholder{
+    padding-left: 20px;
+}
+
+.lupa img {
+    margin-left: -40px;
+    width: 18px;
+}
+
+.desenho{
+    width: 1120px;
+    margin: 50px auto;
+    display: flex;
+    gap: 52px;
+    
+    
+}
+
+.desenho1 p {
+   margin-top: -60px;
+   padding-left: 20px;
+   font-size: 14px;
+   font-weight: 700;
+ 
+}
+
+.desenho-2 p {
+    margin-top: -60px;
+   padding-left: 20px;
+   font-size: 14px;
+   font-weight: 700; 
+}
+
+.desenho-3 p {
+    margin-top: -60px;
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 700; 
+}
+
+.desenho .desenho-2 {
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: color;
+}
+
+.desenho-2 {
+
+    width: 1120px;
+    margin: 50px auto;
+    display: flex;
+    gap: 52px;
+    
+    
+}
+
+.desenho-3 {
+
+    width: 1120px;
+    margin: 50px auto;
+    display: flex;
+    gap: 52px;
+}
+
+/* section icone */
+
+.icone {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.icone button {
+    width: 30px;
+    height: 30px;
+    background: #282830;
+    border: none;
+    margin: 4px;
+    cursor: pointer;
+
+}
+
+.icone-menu .btn-1 {
+    border: #8257E6 solid 1px;
+    color: #8257E6;
+}
+
+/* footer */
+
+.rodape {
+    margin-top: 80px;
+}
+
+
+.rodape h2 {
+    text-align: center;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #8257E6;
+    margin-bottom: 30px;
+}
+
+.copy p {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 60px;
+}
+
+@media (max-width:460px) {
+    .menu {
+        margin-left: 660px;
+    }
+
+    .minha-conta {
+        margin-left: 40px;
+    }
+
+    .menu ul {
+        display: flex;
+        gap: 40px;
+        font-size: 40px;
+    }
+
+    .ajuda input {
+        width: 1120px;
+        height: 40px;
+        background: #282830;
+        color: #989898;
+        border: none;
+        outline: none;
+        margin-left: 200px;
+    }
+
+    .capa {
+        background-image: url("img/capanoticia.png");
+        width: 1400px;
+        height: 250px;
+        margin-left: -50px;
+    }
+
+    .anime-des {
+        flex-wrap: wrap;
+        margin-left: 200px;
+    }
+
+    .desenho {
+        margin-left: 70px;
+    }
+
+    .desenho-2 {
+        margin-left: 70px;
+    }
+
+    .desenho-3 {
+        margin-left: 70px;
+    }
+    
+}
